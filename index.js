@@ -3,10 +3,9 @@ const color= ['red', 'green','#fff', 'rgba(212,133,200,0.8)','peach',
 const btn = document.getElementById('btn');
 let hexEl= document.getElementById('hex-el')
 console.log(hexEl)
-let randomNumber= getRandomNumber();
-
 
 btn.addEventListener( 'click', function(){
+    let randomNumber= getRandomNumber();
     let hexCode= '#'
     for (let i = 0; i < color.length; i++) {
         hexCode = color[randomNumber]
